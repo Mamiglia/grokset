@@ -1,55 +1,97 @@
-# Academic Project Page Template
-> **Notice**: This is the original version of the template. A modernized version with improved design, SEO, mobile support, and additional features is now available on the [main branch](https://github.com/eliahuhorwitz/Academic-project-page-template).
-> 
-This is an academic paper project page template.
+# @GROKSET: Human-LLM Interactions in Social Media
 
+This repository contains the project page for the @GROKSET research paper, which presents the first large-scale dataset of multi-party human-LLM interactions in public social media.
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+## Project Overview
 
+Large Language Models (LLMs) are increasingly deployed as active participants on public social media platforms, yet their behavior in these unconstrained social environments remains largely unstudied. @GROKSET addresses this gap with a dataset of over 1 million tweets involving the GROK LLM on X (formerly Twitter).
 
+### Key Findings
 
-## Start using the template
-To start using the template click on `Use this Template`.
+1. **The Arbiter in the Loop**: Users frequently invoke the LLM not as a social peer, but as an authoritative arbiter in high-stakes, polarizing debates regarding elections, conflicts, and social controversies.
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+2. **The Engagement Gap**: Despite deployment in contentious public spaces, the model is treated as a low-engagement utility. Human-authored content receives significantly more social validation (likes, replies) than LLM outputs.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+3. **Shallow Alignment**: The adversarial nature of public discourse exposes brittle safety mechanisms. Users bypass safety filters not through complex technical attacks, but through simple persona adoption and tone mirroring.
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
+## Dataset Statistics
 
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://horwitz.ai](https://horwitz.ai)
+- **Total Tweets**: 1,098,394
+- **Conversations**: 182,707
+- **Unique Users**: 241,386
+- **Average Turns per Conversation**: 6.01
+- **Collection Period**: 7 months (March - October 2025)
+- **Key Feature**: Multi-party dynamics with rich engagement metadata
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+## Features
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+Unlike existing datasets from private chat interfaces (WildChat, LMSYS-Chat-1M, StudyChat), @GROKSET captures:
+- Multi-party conversations with complex social dynamics
+- Public discourse in adversarial, performative contexts
+- Rich engagement metadata (likes, retweets, replies, bookmarks)
+- Real-world high-stakes political and social debates
+
+## Project Page
+
+The project page is hosted at: [https://sarahlz01.github.io/GrokResearch](https://sarahlz01.github.io/GrokResearch)
+
+To view the page locally, simply open `index.html` in a web browser.
+
+## Repository Structure
+
+```
+.
+├── index.html              # Main project page
+├── static/
+│   ├── css/               # Stylesheets (Bulma framework)
+│   ├── js/                # JavaScript files
+│   ├── pdfs/              # Paper PDF
+│   └── images/            # Figures and visualizations
+│       ├── Dataset/       # Dataset statistics figures
+│       └── Topic_analysis/# Topic modeling visualizations
+└── README.md              # This file
+```
+
+## Citation
+
+If you use this dataset in your research, please cite:
+
+```bibtex
+@article{grokset2026,
+  title={@GROKSET: Multi-party Human-LLM Interactions in Social Media},
+  author={Anonymous Authors},
+  year={2026},
+  note={Dataset and code available at https://github.com/sarahlz01/GrokResearch}
+}
+```
+
+## Authors
+
+- Matteo Migliarini* (Sapienza University)
+- Berat Ercevik* (University of California Santa Cruz)
+- Oluwagbemike Olowe (University of Calgary)
+- Saira Fatima (University of Calgary)
+- Sarah Zhao (University of Calgary)
+- Minh Anh Le (University of Calgary)
+- Vasu Sharma (Meta FAIR)
+- Ashwinee Panda (University of Maryland)
+
+*Equal contribution
+
+## Acknowledgements
+
+This research was funded by **Algoverse AI Research**. We gratefully acknowledge their support in making this work possible.
+
+## Warning
+
+This paper contains data and model outputs which are offensive in nature, as it analyzes real-world interactions in public social media environments.
+
+## Website Template
+
+This project page was built using the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template) which was adopted from the [Nerfies](https://nerfies.github.io) project page.
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
