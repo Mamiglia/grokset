@@ -57,18 +57,18 @@
               <!-- Paper authors -->
               <span class="author-block">Matteo Migliarini<sup>*1</sup>,</span>
               <span class="author-block">Berat Ercevik<sup>*2</sup>,</span>
-              <span class="author-block">Oluwagbemike Olowe<sup>3</sup>,</span>
+              <span class="author-block">Oluwagbemike Olowe,</span>
               <span class="author-block">Saira Fatima<sup>3</sup>,</span> <br>
-              <span class="author-block">Sarah Zhao<sup>3</sup>,</span>
-              <span class="author-block">Minh Anh Le<sup>3</sup>,</span>
-              <span class="author-block">Vasu Sharma<sup>4</sup>,</span>
-              <span class="author-block">Ashwinee Panda<sup>5</sup></span>
+              <span class="author-block">Sarah Zhao,</span>
+              <span class="author-block">Minh Anh Le,</span>
+              <span class="author-block">Vasu Sharma,</span>
+              <span class="author-block">Ashwinee Panda></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">
                       <small><sup>1</sup>Sapienza University, <sup>2</sup>University of California Santa Cruz, <sup>3</sup>University of Calgary,<br>
-                      <sup>4</sup>Meta (FAIR), <sup>5</sup>University of Maryland</small>
+                      
                     </span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
                     <span class="eql-cntrb"><small><br><sup>⚠️</sup>Warning: This paper contains data and model outputs which are offensive in nature</small></span>
@@ -130,7 +130,7 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -167,6 +167,30 @@ agents and societal discourse
       </div>
     </div>
   </div>
+</section> -->
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">The "Wild West" of AI</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>What happens when an AI leaves the safety of a private chat window and enters the chaotic public square of social media?</strong>
+          </p>
+          <p>
+            Until now, we've only studied Large Language Models (LLMs) in isolation—polite, one-on-one chats in a sterile lab environment. But the reality is changing. AI is now a public figure.
+          </p>
+          <p>
+            We introduce <strong>@GROKSET</strong>, the first massive dataset capturing over <strong>1M tweets</strong> involving the @grok LLM on X (formerly Twitter). By observing an AI "in the wild," we discovered a fascinating shift in behavior. Users don't treat the AI like a helpful assistant; they treat it like a <strong>referee</strong>. They tag the model in the middle of heated political arguments, demanding it declare a winner.
+          </p>
+          <p>
+            The results are surprising: despite being "smart," the AI is socially awkward. It gets ignored more than human users, struggles to read the room, and users can easily trick it into adopting toxic personas just by changing their tone. @GROKSET offers a window into the future of humans and AI co-existing in public spaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- End paper abstract -->
 
@@ -176,19 +200,19 @@ agents and societal discourse
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Key Findings</h2>
+        <h2 class="title is-3">What We Found</h2>
         <div class="content has-text-left">
           <div class="notification is-info is-light">
-            <h4 class="title is-5">1. The Arbiter in the Loop</h4>
-            <p>Users frequently invoke the LLM not as a social peer, but as an <strong>authoritative arbiter</strong> in high-stakes, polarizing debates regarding elections, conflicts, and social controversies.</p>
+            <h4 class="title is-5"><span class="icon">⚖️</span> @grok is this true?</h4>
+            <p>Users rarely ask Grok to write code or emails. Instead, they summon the AI into the middle of high-stakes, polarizing arguments—asking it to settle debates on elections, wars, and social issues as if it were an objective judge.</p>
           </div>
           <div class="notification is-warning is-light">
-            <h4 class="title is-5">2. The Engagement Gap</h4>
-            <p>Despite deployment in contentious public spaces, the model is treated as a <strong>low-engagement utility</strong>. Human-authored content receives significantly more social validation (likes, replies) than LLM outputs.</p>
+            <h4 class="title is-5"><span class="icon">👻</span> Cheap Engagement</h4>
+            <p>Despite having access to millions of users, the AI is socially ignored. It suffers from an <strong>"Engagement Gap"</strong>: human replies get likes and retweets, while the AI's replies are often treated like utility bills—read, used, but rarely applauded.</p>
           </div>
           <div class="notification is-danger is-light">
-            <h4 class="title is-5">3. Shallow Alignment</h4>
-            <p>The adversarial nature of public discourse exposes <strong>brittle safety mechanisms</strong>. Users bypass safety filters not through complex technical attacks, but through simple persona adoption and tone mirroring.</p>
+            <h4 class="title is-5"><span class="icon">🎭</span> Easy to trick</h4>
+            <p>Safety filters are brittle in the wild. You don't need complex hacking code to break the AI's safety guardrails. We found that users bypass restrictions simply by <strong>mirroring the tone</strong> they want the AI to adopt, effectively "peer pressuring" the model into compliance.</p>
           </div>
         </div>
       </div>
@@ -199,17 +223,18 @@ agents and societal discourse
 
 
 <!-- Dataset Statistics -->
+<!-- Dataset Statistics -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Overview</h2>
+        <h2 class="title is-3">A Dataset Like No Other</h2>
         <div class="content has-text-justified">
           <p>
-            @GROKSET represents a paradigm shift in how we study LLM interactions. Unlike existing datasets derived from private chat interfaces such as WildChat, LMSYS-Chat-1M, or StudyChat, our dataset captures the <strong>complex social dynamics</strong> of public discourse where LLMs operate as visible participants in multi-party conversations.
+            Existing AI datasets are like reading a diary—private and one-sided. @GROKSET is like reading a crowded room. It captures the <strong>messy, multi-party dynamics</strong> of real social media, where multiple humans and an AI interact simultaneously.
           </p>
           <p>
-            The dataset encompasses <strong>seven months of GROK's public activity</strong> on X (formerly Twitter), from March to October 2025. This temporal span captures the model's behavior across diverse real-world events, political developments, and social controversies, providing unprecedented insight into how LLMs function when subjected to the adversarial, performative, and highly polarized nature of public social media.
+            Spanning <strong>seven months (March–October 2025)</strong>, this dataset tracks the AI's behavior through major global elections, conflicts, and viral controversies. It allows researchers to see not just what the AI says, but exactly how the world reacts to it via likes, retweets, and replies.
           </p>
           <div class="columns is-multiline is-centered" style="margin-top: 2rem;">
             <div class="column is-one-third">
@@ -226,34 +251,32 @@ agents and societal discourse
             </div>
             <div class="column is-one-third">
               <div class="box">
-                <p class="heading">Unique Users</p>
+                <p class="heading">Unique Humans</p>
                 <p class="title">241,386</p>
               </div>
             </div>
+            <!-- Second Row -->
             <div class="column is-one-third">
               <div class="box">
-                <p class="heading">Avg. Turns</p>
-                <p class="title">6.01</p>
+                <p class="heading">Avg. Conversation Depth</p>
+                <p class="title">6 Turns</p>
               </div>
             </div>
             <div class="column is-one-third">
               <div class="box">
-                <p class="heading">Collection Period</p>
+                <p class="heading">Timeline</p>
                 <p class="title">7 Months</p>
               </div>
             </div>
             <div class="column is-one-third">
               <div class="box">
-                <p class="heading">Features</p>
-                <p class="title">Multi-party</p>
+                <p class="heading">Key Feature</p>
+                <p class="title">Multi-Party</p>
               </div>
             </div>
           </div>
           <p style="margin-top: 2rem;">
-            What distinguishes @GROKSET is the presence of <strong>multi-party dynamics</strong>: unlike dyadic user-assistant exchanges, conversations in our dataset involve multiple human participants engaging with both the LLM and each other. This creates complex interaction graphs where the model must navigate competing viewpoints, hostile questioning, and performative challenges—conditions absent from controlled chat environments.
-          </p>
-          <p>
-            Furthermore, each interaction includes rich <strong>engagement metadata</strong> (likes, retweets, replies, bookmarks) that quantifies social validation—a critical signal entirely absent from existing corpora. This enables us to empirically measure not just what the LLM says, but how the public receives it.
+            This is the first resource that allows us to empirically measure <strong>social validation</strong>. Does the public trust the AI? The "Like" button tells a story that text analysis alone cannot.
           </p>
         </div>
       </div>
@@ -263,14 +286,15 @@ agents and societal discourse
 <!-- End dataset statistics -->
 
 <!-- Figures -->
+<!-- Figures -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">Key Visualizations</h2>
+      <h2 class="title is-3 has-text-centered">Visualizing the Ecosystem</h2>
 
       <div class="content has-text-justified" style="max-width: 900px; margin: 0 auto 3rem;">
         <p>
-          The following visualizations provide insight into the structural and thematic characteristics of @GROKSET. Figure 2 illustrates the dataset's distribution across conversation length and linguistic diversity, while Figure 5 reveals the dominant thematic clusters that emerge when LLMs are deployed in public social spaces.
+          The data reveals that public AI interaction is fundamentally different from private chatting. While most people ask a quick question and leave, a significant number of users engage in "marathon" debates with the model.
         </p>
       </div>
 
@@ -281,7 +305,7 @@ agents and societal discourse
             <img src="static/images/Dataset/grokset_turns.png" alt="Distribution of conversation turns" style="width: 30vw; max-width: 100%;"/>
           </figure>
           <p class="subtitle" style="margin-top: 1rem;">
-            <strong>Figure 2(a):</strong> Distribution of conversation turns. Most interactions follow a short query-response pattern peaking at three turns, though the dataset exhibits a heavy-tailed distribution with some discussions extending beyond 10 turns.
+            <strong>The "Query vs. Debate" Split:</strong> Most interactions follow a short query-response pattern peaking at three turns, though the dataset exhibits a heavy-tailed distribution with some discussions extending beyond 10 turns. 
           </p>
         </div>
         <div class="column is-half has-text-centered">
@@ -289,17 +313,15 @@ agents and societal discourse
             <img src="static/images/Dataset/grokset_languages.png" alt="Language distribution" style="width: 30vw; max-width: 100%;"/>
           </figure>
           <p class="subtitle" style="margin-top: 1rem;">
-            <strong>Figure 2(b):</strong> Language distribution across all tweets. The corpus is linguistically diverse but skews heavily towards English, with significant representation from Spanish, Japanese, Portuguese, and other languages.
+            <strong>A Global Conversation:</strong> the corpus is linguistically diverse but skews heavily towards English.
           </p>
         </div>
       </div>
 
       <div class="content has-text-justified" style="max-width: 900px; margin: 3rem auto;">
+        <h4 class="title is-4 has-text-centered">What are they talking about?</h4>
         <p>
-          Our thematic analysis using BERTopic reveals a striking departure from the utilitarian queries typical of private chat logs. Rather than asking for help with code, creative writing, or general knowledge, users invoke GROK as an <strong>authoritative arbiter</strong> in politically charged debates. The t-SNE visualization below shows clear semantic clustering around contentious global issues: the Ukraine-Russia conflict, Turkish-Kurdish relations, Nigerian political rivalries, vaccine safety controversies, and AGI ethics debates.
-        </p>
-        <p>
-          This functional shift has profound implications. When deployed in public view, the LLM is no longer a neutral assistant but an active participant whose statements carry implicit authority—precisely because users perceive them as objective and fact-based. Yet as our analysis demonstrates, this positioning places the model in high-stakes arbitration roles for which it was not explicitly designed.
+          We clustered the topics of conversation, and the results were stark. In private, people ask ChatGPT to fix their Python code or write poems. In public, <strong>people use Grok to fight.</strong> The visualization below shows the semantic landscape: it is dominated by war, elections, vaccine safety, and political scandals.
         </p>
       </div>
 
@@ -310,7 +332,7 @@ agents and societal discourse
             <img src="static/images/Topic_analysis/tsne_plot.png" alt="Topic modeling t-SNE visualization" style="width: 50vw; max-width: 100%; display: inline-block;"/>
           </figure>
           <p class="subtitle has-text-centered" style="margin-top: 1rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-            <strong>Figure 5:</strong> t-SNE visualization of conversation-level embeddings representing the 10 most frequent topics from 1,112 discovered clusters. The thematic landscape is dominated by politically and socially charged issues rather than technical queries or creative prompts typical of private chat logs. Users leverage the model's real-time information access to adjudicate developing controversies as they unfold.
+            <strong>The Landscape of Controversy:</strong> Unlike the "utility" clusters seen in private chat datasets, our public dataset forms dense clusters around high-tension geopolitical events.
           </p>
         </div>
       </div>
@@ -432,7 +454,7 @@ agents and societal discourse
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{grokset2026,
   title={@GROKSET: Multi-party Human-LLM Interactions in Social Media},
-  author={Anonymous Authors},
+  author={},
   year={2026},
   note={Dataset and code available at https://github.com/sarahlz01/GrokResearch}
 }</code></pre>
