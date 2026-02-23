@@ -72,7 +72,7 @@ If you use this dataset in your research, please cite:
 - Oluwagbemike Olowe (University of Calgary)
 - Saira Fatima (University of Calgary)
 - Sarah Zhao (University of Calgary)
-- Minh Anh Le (University of Calgary)
+- Minh Anh Le (University of Utah)
 - Vasu Sharma (Meta FAIR)
 - Ashwinee Panda (University of Maryland)
 
