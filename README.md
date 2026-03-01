@@ -57,11 +57,14 @@ To view the page locally, simply open `index.html` in a web browser.
 If you use this dataset in your research, please cite:
 
 ```bibtex
-@article{grokset2026,
-  title={@GROKSET: Multi-party Human-LLM Interactions in Social Media},
-  author={Anonymous Authors},
-  year={2026},
-  note={Dataset and code available at https://github.com/sarahlz01/GrokResearch}
+@misc{migliarini2026groksetmultipartyhumanllminteractions,
+      title={@GrokSet: multi-party Human-LLM Interactions in Social Media}, 
+      author={Matteo Migliarini and Berat Ercevik and Oluwagbemike Olowe and Saira Fatima and Sarah Zhao and Minh Anh Le and Vasu Sharma and Ashwinee Panda},
+      year={2026},
+      eprint={2602.21236},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://arxiv.org/abs/2602.21236}, 
 }
 ```
 
