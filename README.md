@@ -57,7 +57,7 @@ To view the page locally, simply open `index.html` in a web browser.
 If you use this dataset in your research, please cite:
 
 ```bibtex
-@misc{migliarini2026groksetmultipartyhumanllminteractions,
+@misc{migliarini2026grokset,
       title={@GrokSet: multi-party Human-LLM Interactions in Social Media}, 
       author={Matteo Migliarini and Berat Ercevik and Oluwagbemike Olowe and Saira Fatima and Sarah Zhao and Minh Anh Le and Vasu Sharma and Ashwinee Panda},
       year={2026},
